@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <title>Coupon Generator</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <a type="button" name="button" class="navbar-brand">GEN COUPON</a>
+  </nav>
+  <div class="container-fluid">
+    <form method="post" action="form.php" enctype="multipart/form-data">
+      <div class="form-group">
+        <label>Product Name</label>
+        <input type="text" class="form-control" id="productName" name="name" placeholder="product name">
+      </div>
+      <div class="form-group">
+        <label for="productLogo">Product Logo</label>
+        <input type="file" class="form-control-file" name="logo" id="productLogo">
+        <small class="form-text text-muted">select an image of the logo</small>
+      </div>
+      <div class="form-group">
+        <label for="discount">Discount</label>
+        <input type="number" class="form-control" name="discount" placeholder="discount percentage" id="discount">
+        <small class="form-text text-muted">enter the discount in terms of percentage</small>
+      </div>
+      <div class="form-group">
+        <label for="description">Product description</label>
+        <input type="text" class="form-control" id="description" name="description" placeholder="description of the product">
+        <small class="form-text text-muted">Give a short description of the product</small>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address" name="address" placeholder="address">
+        <small class="form-text text-muted">Enter the address where the coupon is valid</small>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">SUBMIT</button>
+      </div>
+    </form>
+
+  </div>
+  <script src="coupon.js">
+  </script>
+</body>
+
+</html>
